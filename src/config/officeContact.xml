@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+    <worksheet name="Sheet1">
+    <section startRow="0" endRow="1"></section>
+    <loop startRow="2" endRow="2" items="bkContacts" var="bkContanct" varType="com.coscon.model.BkContact">
+            <section startRow="2" endRow="2">
+                <mapping row="2" col="0">bkContanct.seq</mapping>
+                <mapping row="2" col="1">bkContanct.enName</mapping>
+                <mapping row="2" col="2">bkContanct.cnName</mapping>
+                <mapping row="2" col="3">bkContanct.enDept</mapping>
+                <mapping row="2" col="4">bkContanct.cnDept</mapping>
+                <mapping row="2" col="5">bkContanct.enTitle</mapping>
+                <mapping row="2" col="6">bkContanct.cnTitle</mapping>
+                <mapping row="2" col="7">bkContanct.tel1</mapping>
+                <mapping row="2" col="8">bkContanct.tel2</mapping>
+                <mapping row="2" col="9">bkContanct.email</mapping>
+            </section>
+            <loopbreakcondition>
+                <rowcheck offset="0" />
+            </loopbreakcondition>
+        </loop>
+    </worksheet>
+</workbook>
